@@ -9,31 +9,64 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(196, 70, 70);
 
 }
 
 .container {
+    max-width: 1000px;    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 
-    
-    max-width: 800px;
-    
-    
 }
 
 .canvas {
-   border: 2px solid #111;
+   border: 2px solid rgb(138, 34, 11);
+   background-color: #eee;
+  
 }
 
 
-button {
+.tools {
+    background-color: rgb(138, 34, 11);
+    padding: 5px 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    
 
 }
+
+button  {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: transparent;
+    color: #eee;
+    font-size: 1.2rem;
+}
+
+
+
+span {
+    color: #eee;
+   
+}
+
+input  {
+    max-width: 30px;
+}
+
+
+
+
 
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0;
+
 }
 
 /* Firefox */

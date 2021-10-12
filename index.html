@@ -6,6 +6,7 @@
 
     <title>Document</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="normal.css">
     <script src="app.js"></script>
 
@@ -14,10 +15,28 @@
     <div class="container">
         <canvas width="500px" height="500px" class="canvas" id="canvas"></canvas>
         <div class="tools">
-            <button id="decrease">-</button>
-                <input type="number" id="input">
-            <button id="increase">+</button>
-            <button id="clear">clear</button>
+            <div>
+                <button id="decrease">
+                    <i class="fas fa-minus-circle"></i>
+                </button>
+                    <input type="number" id="input">
+                <button id="increase">
+                    <i class="fas fa-plus-circle"></i>
+                </button><span>Size</span>  
+            </div>
+            <div>                 
+                <input type="color" id="color"><span>Color</span>
+            </div>
+             
+            <div>
+                <button id="clear">
+                    <i class="fas fa-trash"></i>
+                </button>
+                <button id="save">
+                    <i class="fas fa-save"></i>
+                </button>
+            </div>
+            
         </div>
 
     </div>

@@ -10,8 +10,10 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(196, 70, 70);
+    color: #eee;
 
 }
+
 
 .container {
     max-width: 1000px;    
@@ -20,6 +22,7 @@ body {
     flex-direction: column;
 
 }
+
 
 .canvas {
    border: 2px solid rgb(138, 34, 11);
@@ -38,6 +41,7 @@ body {
 
 }
 
+
 button  {
     border: none;
     outline: none;
@@ -49,13 +53,12 @@ button  {
 
 
 
-span {
-    color: #eee;
-   
-}
+
 
 input  {
     max-width: 30px;
+    border: none;
+    outline: none;
 }
 
 
@@ -72,4 +75,11 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+@media (max-width: 700px){
+    .canvas {
+        width: 400px;
+        height: 300px
+    }
 }
